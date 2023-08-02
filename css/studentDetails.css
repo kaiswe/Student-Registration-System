@@ -1,0 +1,157 @@
+html {
+  background-color: rgb(128, 129, 127)
+}
+
+input[type=text] {
+  border-radius: 2em 2em;
+  padding: 0 10px;
+  width: 50%;
+  border: none;
+  line-height: 2em;
+  margin-bottom: 20px;
+  font-size: large;
+  font-family: monospace;
+}
+
+input[id="stID"] {
+  border-radius: 2em 2em;
+  padding: 0 10px;
+  width: 130px;
+  border: none;
+  line-height: 2em;
+  margin-bottom: 20px;
+  font-size: large;
+  font-family: monospace;
+}
+
+input[id="stAge"] {
+  border-radius: 2em 2em;
+  padding: 0 10px;
+  width: 75px;
+  border: none;
+  line-height: 2em;
+  margin-bottom: 20px;
+  font-size: large;
+  font-family: monospace;
+}
+
+input:invalid {
+  border: 2px solid rgb(248, 2, 43);
+
+}
+
+input:valid:not(.buttons):not(#stPhoto) {
+  border: 2px solid green;
+}
+
+input:focus {
+  outline: none;
+}
+
+.pageTitle {
+  font-weight: 200;
+  margin-top: 75px;
+  text-align: center;
+  background-color: #04aa9c;
+  font-size: 40px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(0, 0, 0);
+  box-sizing: border-box;
+  border-radius: 2em 2em;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  font-family: monospace;
+  font-weight: bolder;
+}
+
+div[id=inputFeedback] {
+  text-align: center;
+  font-family: monospace;
+  font-weight: bolder;
+  font-size: 24px;
+  padding: 12px;
+}
+
+div[id=feedbackDiv] {
+  text-align: center;
+  font-family: monospace;
+  font-weight: bolder;
+  font-size: 24px;
+  padding: 12px;
+}
+
+.subTitle {
+  text-align: center;
+  font-weight: bolder;
+  border-radius: 2em 2em;
+  background-color: #04aa9c;
+  line-height: 1em;
+  font-size: 25px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(0, 0, 0);
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  font-family: monospace;
+}
+
+#main-form-table {
+  border-radius: 5px;
+  background-color: rgb(128, 129, 127);
+  padding: 20px;
+  height: 100vh;
+}
+
+.studentTable {
+  padding: 15px;
+}
+
+.studentTable a {
+  padding: 20px;
+  text-align: center;
+}
+
+.studentTable th,
+.studentTable td {
+  border: 1px solid;
+  padding: 20px;
+  text-align: center;
+}
+
+#main-table {
+  margin: 0 auto;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  padding: 20px;
+  float: right;
+}
+
+#main-form-table .labels {
+  font-size: 24px;
+  font-style: inherit;
+}
+
+#main-form-table .gender {
+  width: 20px;
+}
+
+.labels {
+  font-family: monospace;
+  font-weight: bolder;
+}
+
+.buttons {
+  border-radius: 2em 2em;
+  font-size: large;
+  font-family: monospace;
+}
+
+.buttons:hover {
+  background-color: #f3f8f6;
+  transition: 0.7s;
+}

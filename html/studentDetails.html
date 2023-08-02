@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Student Registration</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/csv"></script>
+</head>
+
+<body>
+    <div id="main-form-table">
+        <table id="main-table">
+            <tr>
+                <td>
+                    <form action="/" enctype="multipart/form-data" method="POST" id="studentForm">
+                        <div class="pageTitle">Student Registration System</div>
+                        <div class="subTitle">Please enter all fields for student submission to the server</div>
+                        <br><br>
+                        <label class="labels">Student ID:</label>
+                        <input type="tel" name="studentID" id="stID" minlength="8" maxlength="8" required="">
+                        <br><br>
+                        <label class="labels">First Name:</label>
+                        <input type="text" name="firstName" id="fName" minlength="2" pattern="[a-zA-Z]+"
+                            required=""
+                            title="The student's name should be legible and contain alphabetic letters only.">
+                        <br><br>
+                        <label class="labels">Last Name:</label>
+                        <input type="text" name="lastName" id="lName" minlength="2" pattern="[a-zA-Z]+" required=""
+                            title="The student's name should be legible and contain alphabetic letters only.">
+                        <br><br>
+                        <label class="labels">Age:</label>
+                        <input type="tel" name="studentAge" id="stAge" maxlength="2" pattern="[0-99]{0,99}" required=""
+                            title="Please enter an appropriate age for the student">
+                        <br><br>
+                        <label class="labels">Male:</label>
+                        <input type="radio" class="gender" name="studentGender" id="studentGender_Male" value="Male"
+                            required="">
+                        <label class="labels">Female:</label>
+                        <input type="radio" class="gender" name="studentGender" id="studentGender_Female" value="Female"
+                            required="">
+                        <br><br>
+                        <label class="labels">Degree:</label>
+                        <input type="text" name="studentDegree" id="stDegree" minlength="3" pattern="[a-zA-Z\s]+"
+                            required="" title="The student's degree should contain alphabetic letters only.">
+                        <br><br>
+                        <label class="labels">Upload Student's Photo:</label>
+                        <input type="file" name="studentPhoto" id="stPhoto">
+                        <br><br>
+                        <input type="submit" value="Register student" id="submitData" class="buttons">
+                    </form>
+                    <br><br>
+                    <form action="/search" enctype="multipart/form-data" method="POST" id="searchStudentForm">
+                        <input type="submit" value="Search Student Database" id="searchStudents" class="buttons">
+                        <br><br>
+                        <div id="feedbackDiv"></div>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
